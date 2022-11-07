@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gli.dataset module &mdash; GLI 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> GLI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="start/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/contribute.html">Contributor Guidelines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.dataloading.html">gli.dataloading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.graph.html">gli.graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.task.html">gli.task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.dataset.html">gli.dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.utils.html">gli.utils</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="format.html">Storage API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GLI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">gli.dataset module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/gli.dataset.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-gli.dataset">
+<span id="gli-dataset-module"></span><h1>gli.dataset module<a class="headerlink" href="#module-gli.dataset" title="Permalink to this heading"></a></h1>
+<p>Dataset for GLI.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.EdgeDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">EdgeDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.EdgeDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.GLIDataset" title="gli.dataset.GLIDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLIDataset</span></code></a></p>
+<p>Edge level dataset.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="gli.dataset.EdgeDataset.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.EdgeDataset.process" title="Permalink to this definition"></a></dt>
+<dd><p>Add split masks to edata.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.GLIDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">GLIDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">DGLHeteroGraph</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">DGLHeteroGraph</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.GLIDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DGLDataset</span></code></p>
+<p>GLI Base Dataset.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.GraphClassificationDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">GraphClassificationDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graphs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">DGLHeteroGraph</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GraphClassificationTask" title="gli.task.GraphClassificationTask"><span class="pre">GraphClassificationTask</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train_set'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.GraphClassificationDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.GraphDataset" title="gli.dataset.GraphDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphDataset</span></code></a></p>
+<p>Graph classification dataset.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.GraphDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">GraphDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graphs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">DGLHeteroGraph</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_set</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train_set'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.GraphDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.GLIDataset" title="gli.dataset.GLIDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLIDataset</span></code></a></p>
+<p>Graph Dataset.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="gli.dataset.GraphDataset.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.GraphDataset.process" title="Permalink to this definition"></a></dt>
+<dd><p>Add train, val, and test masks to graph.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.GraphRegressionDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">GraphRegressionDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graphs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">DGLHeteroGraph</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GraphRegressionTask" title="gli.task.GraphRegressionTask"><span class="pre">GraphRegressionTask</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train_set'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.GraphRegressionDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.GraphDataset" title="gli.dataset.GraphDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphDataset</span></code></a></p>
+<p>Graph regression dataset.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.KGEntityPredictionDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">KGEntityPredictionDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.KGEntityPredictionDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.LinkPredictionDataset" title="gli.dataset.LinkPredictionDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">LinkPredictionDataset</span></code></a></p>
+<p>Knowledge graph entity prediction dataset.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.KGRelationPredictionDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">KGRelationPredictionDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.KGRelationPredictionDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.LinkPredictionDataset" title="gli.dataset.LinkPredictionDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">LinkPredictionDataset</span></code></a></p>
+<p>Knowledge graph relation prediction dataset.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.LinkPredictionDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">LinkPredictionDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.LinkPredictionDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.EdgeDataset" title="gli.dataset.EdgeDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">EdgeDataset</span></code></a></p>
+<p>Link prediction dataset.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="gli.dataset.LinkPredictionDataset.get_idx_split">
+<span class="sig-name descname"><span class="pre">get_idx_split</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.LinkPredictionDataset.get_idx_split" title="Permalink to this definition"></a></dt>
+<dd><p>Return a dictionary of train, val, and test splits.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>split_dict</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gli.dataset.LinkPredictionDataset.get_train_graph">
+<span class="sig-name descname"><span class="pre">get_train_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.LinkPredictionDataset.get_train_graph" title="Permalink to this definition"></a></dt>
+<dd><p>Return the subgraph that removes val and test edges.</p>
+<p>Notice that the returned graph will be generated from a copy of self._g
+and be re-indexed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>train_g</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>DGLGraph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.NodeClassificationDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">NodeClassificationDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.NodeClassificationTask" title="gli.task.NodeClassificationTask"><span class="pre">NodeClassificationTask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.NodeClassificationDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.NodeDataset" title="gli.dataset.NodeDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeDataset</span></code></a></p>
+<p>Node classification dataset.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.NodeDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">NodeDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.NodeDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.GLIDataset" title="gli.dataset.GLIDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLIDataset</span></code></a></p>
+<p>Node level dataset.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="gli.dataset.NodeDataset.get_node_indices">
+<span class="sig-name descname"><span class="pre">get_node_indices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.NodeDataset.get_node_indices" title="Permalink to this definition"></a></dt>
+<dd><p>Return a dictionary with train, val, and test splits.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="gli.dataset.NodeDataset.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.NodeDataset.process" title="Permalink to this definition"></a></dt>
+<dd><p>Add train, val, and test masks to graph.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.NodeRegressionDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">NodeRegressionDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.NodeRegressionTask" title="gli.task.NodeRegressionTask"><span class="pre">NodeRegressionTask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.NodeRegressionDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.NodeDataset" title="gli.dataset.NodeDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeDataset</span></code></a></p>
+<p>Node regression dataset.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.dataset.TimeDependentLinkPredictionDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">TimeDependentLinkPredictionDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.TimeDependentLinkPredictionDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.dataset.LinkPredictionDataset" title="gli.dataset.LinkPredictionDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">LinkPredictionDataset</span></code></a></p>
+<p>Link Prediction dataset.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="gli.dataset.TimeDependentLinkPredictionDataset.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.TimeDependentLinkPredictionDataset.process" title="Permalink to this definition"></a></dt>
+<dd><p>Extract split info from edge time.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gli.dataset.edge_dataset_factory">
+<span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">edge_dataset_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.LinkPredictionTask" title="gli.task.LinkPredictionTask"><span class="pre">LinkPredictionTask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.edge_dataset_factory" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize and return a LinkPrediction Dataset.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gli.dataset.graph_dataset_factory">
+<span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">graph_dataset_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graphs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">DGLHeteroGraph</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.graph_dataset_factory" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize and return split GraphDataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graphs</strong> (<em>Iterable</em><em>[</em><em>DGLGraph</em><em>]</em>) – A list of GLI graphs.</p></li>
+<li><p><strong>task</strong> (<a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><em>GLITask</em></a>) – GLI task config</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>TypeError</strong> – Unknown task type.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Graph level dataset.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#gli.dataset.GraphDataset" title="gli.dataset.GraphDataset">GraphDataset</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gli.dataset.node_dataset_factory">
+<span class="sig-prename descclassname"><span class="pre">gli.dataset.</span></span><span class="sig-name descname"><span class="pre">node_dataset_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DGLHeteroGraph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><span class="pre">GLITask</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.dataset.node_dataset_factory" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize and return a NodeDataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>graph</strong> (<em>DGLGraph</em>) – A DGL graph</p></li>
+<li><p><strong>task</strong> (<a class="reference internal" href="gli.task.html#gli.task.GLITask" title="gli.task.GLITask"><em>GLITask</em></a>) – GLI task config</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>TypeError</strong> – Unknown task type</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Node level dataset</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#gli.dataset.NodeDataset" title="gli.dataset.NodeDataset">NodeDataset</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, GLI Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

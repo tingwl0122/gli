@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gli.task module &mdash; GLI 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> GLI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="start/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/contribute.html">Contributor Guidelines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.dataloading.html">gli.dataloading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.graph.html">gli.graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.task.html">gli.task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.dataset.html">gli.dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/gli.utils.html">gli.utils</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="format.html">Storage API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GLI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">gli.task module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/gli.task.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-gli.task">
+<span id="gli-task-module"></span><h1>gli.task module<a class="headerlink" href="#module-gli.task" title="Permalink to this heading"></a></h1>
+<p>Task for GLI.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.ClassificationTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">ClassificationTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.ClassificationTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.GLITask" title="gli.task.GLITask"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLITask</span></code></a></p>
+<p>Classification task.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.GLITask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">GLITask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.GLITask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>GLI task base class.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.GraphClassificationTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">GraphClassificationTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.GraphClassificationTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.ClassificationTask" title="gli.task.ClassificationTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassificationTask</span></code></a></p>
+<p>Graph classification task, alias.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.GraphRegressionTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">GraphRegressionTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.GraphRegressionTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.RegressionTask" title="gli.task.RegressionTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegressionTask</span></code></a></p>
+<p>Graph regression task, alias.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.KGEntityPredictionTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">KGEntityPredictionTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.KGEntityPredictionTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.GLITask" title="gli.task.GLITask"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLITask</span></code></a></p>
+<p>Knowledge graph entity prediction task.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.KGRelationPredictionTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">KGRelationPredictionTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.KGRelationPredictionTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.GLITask" title="gli.task.GLITask"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLITask</span></code></a></p>
+<p>Knowledge graph relation prediction task.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.LinkPredictionTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">LinkPredictionTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.LinkPredictionTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.GLITask" title="gli.task.GLITask"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLITask</span></code></a></p>
+<p>Link prediction task.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.NodeClassificationTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">NodeClassificationTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.NodeClassificationTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.ClassificationTask" title="gli.task.ClassificationTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassificationTask</span></code></a></p>
+<p>Node classification task, alias.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.NodeRegressionTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">NodeRegressionTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.NodeRegressionTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.RegressionTask" title="gli.task.RegressionTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">RegressionTask</span></code></a></p>
+<p>Node regression task, alias.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.RegressionTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">RegressionTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.RegressionTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.GLITask" title="gli.task.GLITask"><code class="xref py py-class docutils literal notranslate"><span class="pre">GLITask</span></code></a></p>
+<p>Regression task.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="gli.task.TimeDependentLinkPredictionTask">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">TimeDependentLinkPredictionTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwd</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.TimeDependentLinkPredictionTask" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#gli.task.LinkPredictionTask" title="gli.task.LinkPredictionTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">LinkPredictionTask</span></code></a></p>
+<p>Time dependent link prediction task.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gli.task.read_gli_task">
+<span class="sig-prename descclassname"><span class="pre">gli.task.</span></span><span class="sig-name descname"><span class="pre">read_gli_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PathLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gli.task.read_gli_task" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize and return a Task object given task_path.</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, GLI Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
